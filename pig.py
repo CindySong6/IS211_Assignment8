@@ -1,8 +1,10 @@
 import argparse
-from game import game
+from game import Game
 
 def main(player1, player2):
-    game(player1, player2)
+    pig = Game()
+    pig.setupPlayers(player1,player2)
+    pig.runGame()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
